@@ -13,7 +13,7 @@ public class MainHappyN {
         //Scanner scanner = new Scanner(System.in);
         List digits = new ArrayList();
         //n = scanner.nextInt();
-        for(int i = 1; i < 100; i++){
+        for(int i = 7; i < 10; i++){
             n = i;
             System.out.println("Ist " + n + " eine Happy Number?");
             happyDigits = Listifier(n);
@@ -41,7 +41,7 @@ public class MainHappyN {
     }
     static List listOfUniqueSums = new ArrayList();
     private static int happyNumberS(List ints){
-
+        List tempList = new ArrayList();
         int overallsum = 0;
         for(Object e : ints){
             int sum = 0;
@@ -49,12 +49,6 @@ public class MainHappyN {
             sum *= sum;
             overallsum += sum;
         }
-        /*while(!listOfUniqueSums.contains(overallsum) && overallsum != 1){
-            //System.out.println("Die Summe lautet: " + overallsum);
-            listOfUniqueSums.add(overallsum);
-            recursioncounter++;
-            happyNumberS(Listifier(overallsum));
-        }*/
         if(overallsum != 1){
             if(!listOfHappyNumbers.contains(overallsum)){
                 if(!listOfUniqueSums.contains(overallsum)){
