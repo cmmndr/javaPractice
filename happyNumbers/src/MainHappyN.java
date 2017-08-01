@@ -13,7 +13,7 @@ public class MainHappyN {
         //Scanner scanner = new Scanner(System.in);
         List digits = new ArrayList();
         //n = scanner.nextInt();
-        for(int i = 7; i < 10; i++){
+        for(int i = 7; i < 100; i++){
             n = i;
             System.out.println("Ist " + n + " eine Happy Number?");
             happyDigits = Listifier(n);
